@@ -47,20 +47,26 @@ yarn start
 
 ## Functionality
 
+![Home Page](./screenshots/home_page.png)
+
 ### Connect Wallet
 
 Users can connect their wallets using the `ConnectButton` component from thirdweb. This allows them to interact with the blockchain and perform transactions.
 
+Project works only on testnet 'Sepolia'
+
+![Connect MetaMask and Switch Network](./screenshots/connect-metamask.png)
+
 ### View NFT Metadata
 
 The app fetches and displays metadata for the NFTs, including images, names, and descriptions, using the `MediaRenderer` component.
+![Connect Wallet](./screenshots/connect_wallet.png)
 
 ### Mint NFTs
 
 Users can mint new NFTs by specifying the quantity and clicking the mint button. The app handles the transaction and updates the UI upon successful minting.
+![Mint NFT](./screenshots/mint_nft.png)
 
 ### Display Total Supply
 
 The app shows the total number of NFTs claimed and the total supply available.
-
-## Screenshoots
