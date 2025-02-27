@@ -1,59 +1,66 @@
+# NFT DApp with thirdweb and Next.js
 
-![tw-banner](https://github.com/thirdweb-example/next-starter/assets/57885104/20c8ce3b-4e55-4f10-ae03-2fe4743a5ee8)
+This project is a starter template to build an on-chain [Next.js](https://nextjs.org/) using [thirdweb](https://thirdweb.com/) . It allows users to connect their wallets, view NFT metadata, and mint NFTs.
 
-# thirdweb-next-starter
+## Table of Contents
 
-Starter template to build an onchain react native app with [thirdweb](https://thirdweb.com/) and [next](https://nextjs.org/).
-
-## Installation
-
-Install the template using [thirdweb create](https://portal.thirdweb.com/cli/create)
-
-```bash
-  npx thirdweb create app --next
-```
+- [Installation](#installation)
+- [Environment Variables](#environment-variables)
+- [Run Locally](#run-locally)
+- [Functionality](#functionality)
+- [Resources](#resources)
+- [Need Help?](#need-help)
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file:
+To run this project, you will need to add the following environment variables to your `.env` file:
 
-`CLIENT_ID`
+- `NEXT_PUBLIC_TEMPLATE_CLIENT_ID`: Your thirdweb client ID.
 
-To learn how to create a client ID, refer to the [client documentation](https://portal.thirdweb.com/typescript/v5/client). 
+To learn how to create a client ID, refer to the [client documentation](https://portal.thirdweb.com/typescript/v5/client).
 
-## Run locally
+## Run Locally
 
-Install dependencies
+Install dependencies:
 
 ```bash
 yarn
 ```
 
-Start development server
+Start the development server:
 
 ```bash
 yarn dev
 ```
 
-Create a production build
+Create a production build:
 
 ```bash
 yarn build
 ```
 
-Preview the production build
+Preview the production build:
 
 ```bash
 yarn start
 ```
 
-## Resources
+## Functionality
 
-- [Documentation](https://portal.thirdweb.com/typescript/v5)
-- [Templates](https://thirdweb.com/templates)
-- [YouTube](https://www.youtube.com/c/thirdweb)
-- [Blog](https://blog.thirdweb.com)
+### Connect Wallet
 
-## Need help?
+Users can connect their wallets using the `ConnectButton` component from thirdweb. This allows them to interact with the blockchain and perform transactions.
 
-For help or feedback, please [visit our support site](https://thirdweb.com/support)
+### View NFT Metadata
+
+The app fetches and displays metadata for the NFTs, including images, names, and descriptions, using the `MediaRenderer` component.
+
+### Mint NFTs
+
+Users can mint new NFTs by specifying the quantity and clicking the mint button. The app handles the transaction and updates the UI upon successful minting.
+
+### Display Total Supply
+
+The app shows the total number of NFTs claimed and the total supply available.
+
+## Screenshoots
